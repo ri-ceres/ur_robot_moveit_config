@@ -38,6 +38,79 @@
         <joint name="wrist_2_joint" value="0" />
         <joint name="wrist_3_joint" value="0" />
     </group_state>
+    <group_state name="pi" group="manipulator">
+        <joint name="elbow_joint" value="1.57" />
+        <joint name="shoulder_lift_joint" value="-1.57" />
+        <joint name="shoulder_pan_joint" value="1.57" />
+        <joint name="wrist_1_joint" value="-1.57" />
+        <joint name="wrist_2_joint" value="-1.57" />
+        <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="stalk" group="manipulator">
+        <joint name="elbow_joint" value="2.0245" />
+        <joint name="shoulder_lift_joint" value="-2.3038" />
+        <joint name="shoulder_pan_joint" value="1.57" />
+        <joint name="wrist_1_joint" value="-1.9547" />
+        <joint name="wrist_2_joint" value="-1.57" />
+        <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="defensive" group="manipulator">
+        <joint name="elbow_joint" value="2.583" />
+        <joint name="shoulder_lift_joint" value="-2.8972" />
+        <joint name="shoulder_pan_joint" value="1.57" />
+        <joint name="wrist_1_joint" value="-2.6179" />
+        <joint name="wrist_2_joint" value="-1.57" />
+        <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="coil" group="manipulator">
+        <joint name="elbow_joint" value="2.6528" />
+        <joint name="shoulder_lift_joint" value="-2.8972" />
+        <joint name="shoulder_pan_joint" value="1.57" />
+        <joint name="wrist_1_joint" value="-1.466" />
+        <joint name="wrist_2_joint" value="-3.1415" />
+        <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="observe" group="manipulator">
+        <joint name="elbow_joint" value="1.2915" />
+        <joint name="shoulder_lift_joint" value="-2.0245" />
+        <joint name="shoulder_pan_joint" value="1.57" />
+        <joint name="wrist_1_joint" value="-1.466" />
+        <joint name="wrist_2_joint" value="-1.57" />
+        <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="reach" group="manipulator">
+        <joint name="elbow_joint" value="0.5585" />
+        <joint name="shoulder_lift_joint" value="-0.8377" />
+        <joint name="shoulder_pan_joint" value="1.57" />
+        <joint name="wrist_1_joint" value="-2.6528" />
+        <joint name="wrist_2_joint" value="-1.5707" />
+        <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="open" group="endeffector">
+        <joint name="finger_joint" value="0" />
+        <!-- <joint name="left_inner_finger_joint" value="0" /> -->
+        <!-- <joint name="left_inner_knuckle_joint" value="0" /> -->
+        <!-- <joint name="right_inner_finger_joint" value="0" /> -->
+        <!-- <joint name="right_inner_knuckle_joint" value="0" /> -->
+        <!-- <joint name="right_outer_knuckle_joint" value="0" /> -->
+    </group_state>
+    <group_state name="close" group="endeffector">
+        <joint name="finger_joint" value="0.775" />
+        <!-- <joint name="left_inner_finger_joint" value="0" /> -->
+        <!-- <joint name="left_inner_knuckle_joint" value="0" /> -->
+        <!-- <joint name="right_inner_finger_joint" value="0" /> -->
+        <!-- <joint name="right_inner_knuckle_joint" value="0" /> -->
+        <!-- <joint name="right_outer_knuckle_joint" value="0" /> -->
+    </group_state>
+    <group_state name="midpoint" group="endeffector">
+        <joint name="finger_joint" value="0.4" />
+        <!-- <joint name="left_inner_finger_joint" value="0" /> -->
+        <!-- <joint name="left_inner_knuckle_joint" value="0" /> -->
+        <!-- <joint name="right_inner_finger_joint" value="0" /> -->
+        <!-- <joint name="right_inner_knuckle_joint" value="0" /> -->
+        <!-- <joint name="right_outer_knuckle_joint" value="0" /> -->
+    </group_state>
+
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="endeffector" parent_link="tool0" group="endeffector" parent_group="manipulator" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
