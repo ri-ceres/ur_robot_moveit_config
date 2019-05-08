@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ur_robot
+    relative_path: urdf/ur_robot_robot_joint_limited.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/ur_robot.srdf
+  CONFIG:
+    author_name: Author
+    author_email: email@example.com
+    generated_timestamp: 1557258804
